@@ -1,0 +1,31 @@
+<TYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Nectar Lifesciences Ltd. </title>
+        <link rel="stylesheet" href="./style.css">
+      </head>
+      <body>
+          <h1><center> Boiler Data </h1>
+        {% if result %} 
+            <h1><center> </h1>
+        {% endif %}
+    
+        <form action ="" method = "POST">
+    
+          {% csrf_token %}
+          <center><input type ="date" name="Date" placeholder= "Enter the Date " required ><br> <br>
+            <input type ="floatformat" name="Steam_generated" placeholder=" Steam_generated" required ><br> <br>
+            <input type ="floatformat" name="Husk_consumed" placeholder=" Husk_consumed" required ><br> <br>
+            <input type ="floatformat" name="Condensate_recovery" placeholder=" Condensate_recovery" required ><br> <br>
+            <input type ="floatformat" name="Hot_water_recovered" placeholder=" Hot_water_recovered" required ><br> <br>
+            <input type ="floatformat" name="Max_steam_consumption" placeholder="Max_steam_consumption " required ><br> <br>
+            <input type ="floatformat" name="Running_hour" placeholder=" Running_hour" required ><br> <br>
+            <input type ="floatformat" name="Feed_water_boiler" placeholder="Feed_water_boiler " required ><br> <br>
+            <input type="submit">
+        </form >
+
+  </body>
+</html>

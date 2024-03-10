@@ -1,0 +1,71 @@
+<TYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Nectar Lifesciences Ltd. </title>
+        <link rel="stylesheet" href="./style.css">
+      </head>
+      <body>
+          <h1><center> Oral Utility Running Hours </h1>
+        {% if result %} 
+            <h1><center> </h1>
+        {% endif %}
+    
+        <form action ="" method = "POST">
+    
+          {% csrf_token %}
+          <center><input type ="date" name="Date" placeholder= "Enter the Date " required ><br> <br>
+            <input type ="floatformat" name="Brine_Unit_Howden_01" placeholder="Brine_Unit_Howden_01 " required ><br> <br>
+            <input type ="floatformat" name="Brine_Unit_Howden_02" placeholder=" Brine_Unit_Howden_02" required ><br> <br>
+            <input type ="floatformat" name="Chilled_water_howden_unit_01" placeholder="Chilled_water_howden_unit_01 " required ><br> <br>
+            <input type ="floatformat" name="Chilled_water_CSI_unit_02" placeholder=" Chilled_water_CSI_unit_02" required ><br> <br>
+            <input type ="floatformat" name="Air_Compressor_01" placeholder=" Air_Compressor_01" required ><br> <br>
+            <input type ="floatformat" name="Air_Compressor_02" placeholder="Air_Compressor_02 " required ><br> <br>
+            <input type ="floatformat" name="Air_Compressor_03" placeholder=" Air_Compressor_03" required ><br> <br>
+            <input type ="floatformat" name="Brine_PRM_pump_01" placeholder="Brine_PRM_pump_01" required ><br> <br>
+            <input type ="floatformat" name="Brine_PRM_pump_02" placeholder="Brine_PRM_pump_02" required ><br> <br>
+            <input type ="floatformat" name="Brine_PRM_pump_03" placeholder="Brine_PRM_pump_03 " required ><br> <br>
+            <input type ="floatformat" name="Brine_SEC_pump_01" placeholder=" Brine_SEC_pump_01" required ><br> <br>
+            <input type ="floatformat" name="Brine_SEC_pump_02" placeholder=" Brine_SEC_pump_02" required ><br> <br>
+            <input type ="floatformat" name="Brine_SEC_pump_03" placeholder=" Brine_SEC_pump_03" required ><br> <br>
+            <input type ="floatformat" name="CHW_PRM_Pump_01" placeholder=" CHW_PRM_Pump_01" required ><br> <br>
+            <input type ="floatformat" name="CHW_PRM_Pump_02" placeholder="CHW_PRM_Pump_02 " required ><br> <br>
+            <input type ="floatformat" name="CHW_PRM_Pump_03" placeholder=" CHW_PRM_Pump_03" required ><br> <br>
+            <input type ="floatformat" name="AWAM_02_feed_pump_01" placeholder=" AWAM_02_feed_pump_01" required ><br> <br>
+            <input type ="floatformat" name="AWAM_02_feed_pump_02" placeholder=" AWAM_02_feed_pump_02" required ><br> <br>
+            <input type ="floatformat" name="CHW_SEC_pump_03" placeholder=" CHW_SEC_pump_03" required ><br> <br>
+            <input type ="floatformat" name="CHW_SEC_pump_04" placeholder="CHW_SEC_pump_04 " required ><br> <br>
+            <input type ="floatformat" name="CHW_SEC_pump_05" placeholder=" CHW_SEC_pump_05" required ><br> <br>
+            <input type ="floatformat" name="CT_Water_utility_pump_01" placeholder=" CT_Water_utility_pump_01" required ><br> <br>
+            <input type ="floatformat" name="CT_Water_utility_pump_02" placeholder=" CT_Water_utility_pump_02" required ><br> <br>
+            <input type ="floatformat" name="CT_Water_utility_pump_03" placeholder=" CT_Water_utility_pump_03" required ><br> <br>
+            <input type ="floatformat" name="SRP_CT_water_pump_01" placeholder=" SRP_CT_water_pump_01" required ><br> <br>
+            <input type ="floatformat" name="SRP_CT_water_pump_02" placeholder=" SRP_CT_water_pump_02" required ><br> <br>
+            <input type ="floatformat" name="CTW_Fan_utility_01" placeholder=" CTW_Fan_utility_01" required ><br> <br>
+            <input type ="floatformat" name="SRP_CT_fan_02" placeholder=" SRP_CT_fan_02" required ><br> <br>
+            <input type ="floatformat" name="Screw_compressor_low_stage" placeholder=" Screw_compressor_low_stage" required ><br> <br>
+            <input type ="floatformat" name="Vilter_compressor_High_stage" placeholder=" Vilter_compressor_High_stage" required ><br> <br>
+            <input type ="floatformat" name="MEOH_PRM_pump_01" placeholder="MEOH_PRM_pump_01 " required ><br> <br>
+            <input type ="floatformat" name="MEOH_PRM_pump_02" placeholder="MEOH_PRM_pump_02 " required ><br> <br>
+            <input type ="floatformat" name="MEOH_SEC_pump_01" placeholder=" MEOH_SEC_pump_01" required ><br> <br>
+            <input type ="floatformat" name="MEOH_SEC_pump_02" placeholder=" MEOH_SEC_pump_02" required ><br> <br>
+            <input type ="floatformat" name="MEOH_CT_Water_pump_01" placeholder=" MEOH_CT_Water_pump_01" required ><br> <br>
+            <input type ="floatformat" name="MEOH_CT_Water_pump_02" placeholder="MEOH_CT_Water_pump_02 " required ><br> <br>
+            <input type ="floatformat" name="MEOH_CT_fan_01" placeholder=" MEOH_CT_fan_01" required ><br> <br>
+            <input type ="floatformat" name="MEOH_CT_fan_02" placeholder="MEOH_CT_fan_02 " required ><br> <br>
+            <input type ="floatformat" name="AVAM_soln_pump_01" placeholder=" AVAM_soln_pump_01" required ><br> <br>
+            <input type ="floatformat" name="AVAM_soln_pump_02" placeholder=" AVAM_soln_pump_02" required ><br> <br>
+            <input type ="floatformat" name="CHW_SEC_pump_06" placeholder=" CHW_SEC_pump_06" required ><br> <br>
+            <input type ="floatformat" name="CT_new_pump_01" placeholder="CT_new_pump_01 " required ><br> <br>
+            <input type ="floatformat" name="CT_new_pump_02" placeholder=" CT_new_pump_02" required ><br> <br>
+            <input type ="floatformat" name="CT_new_pump_03" placeholder="CT_new_pump_03 " required ><br> <br>
+            <input type ="floatformat" name="CT_new_fan_01" placeholder="CT_new_fan_01 " required ><br> <br>
+            <input type ="floatformat" name="CT_new_fan_02" placeholder=" CT_new_fan_02" required ><br> <br>
+
+                <input type="submit">
+        </form >
+
+  </body>
+</html>

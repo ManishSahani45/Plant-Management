@@ -1,0 +1,47 @@
+<TYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nectar Lifesciences Ltd. </title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+	  <h1><center> Sterile Utility Running Hours </h1>
+    {% if result %} 
+        <h1><center> </h1>
+    {% endif %}
+
+    <form action ="" method = "POST">
+
+      {% csrf_token %}
+      <center><input type ="date" name="Date" placeholder= "Enter the Date " required ><br> <br>
+        <input type ="floatformat" name="Air_Compressor_01" placeholder=" Air_Compressor_01" required ><br> <br>
+        <input type ="floatformat" name="Air_Compressor_02" placeholder=" Air_Compressor_02" required ><br> <br>
+        <input type ="floatformat" name="Trane_chilled_water_compressor_01" placeholder=" Trane_chilled_water_compressor_01" required ><br> <br>
+        <input type ="floatformat" name="Trane_chilled_water_compressor_02" placeholder=" Trane_chilled_water_compressor_02" required ><br> <br>
+        <input type ="floatformat" name="Chilled_Water_pump_01" placeholder="Chilled_Water_pump_01 " required ><br> <br>
+        <input type ="floatformat" name="Chilled_Water_pump_02" placeholder="Chilled_Water_pump_02 " required ><br> <br>
+        <input type ="floatformat" name="Brine_sec_pump_01" placeholder=" Brine_sec_pump_01" required ><br> <br>
+        <input type ="floatformat" name="Brine_sec_pump_02" placeholder="Brine_sec_pump_02 " required ><br> <br>
+        <input type ="floatformat" name="C_T_Water_Utility_pump_01" placeholder="C_T_Water_Utility_pump_01 " required ><br> <br>
+        <input type ="floatformat" name="C_T_Water_Utility_pump_02" placeholder="C_T_Water_Utility_pump_02 " required ><br> <br>
+        <input type ="floatformat" name="C_T_Water_Utility_pump_03" placeholder="C_T_Water_Utility_pump_03 " required ><br> <br>
+        <input type ="floatformat" name="C_T_W_Fan_Utility_01" placeholder="C_T_W_Fan_Utility_01 " required ><br> <br>
+        <input type ="floatformat" name="C_T_W_Fan_Utility_02" placeholder="C_T_W_Fan_Utility_02 " required ><br> <br>
+        <input type ="floatformat" name="CSI_Brine_Machine_01" placeholder="CSI_Brine_Machine_01 " required ><br> <br>
+        <input type ="floatformat" name="CSI_Brine_Machine_02" placeholder="CSI_Brine_Machine_02 " required ><br> <br>
+        <input type ="floatformat" name="CSI_Brine_Primary_Pump_01" placeholder=" CSI_Brine_Primary_Pump_01" required ><br> <br>
+        <input type ="floatformat" name="CSI_Brine_Primary_Pump_02" placeholder=" CSI_Brine_Primary_Pump_02" required ><br> <br>
+        <input type ="floatformat" name="CSI_Brine_Primary_Pump_03" placeholder="CSI_Brine_Primary_Pump_03 " required ><br> <br>
+        <input type ="floatformat" name="LYO_CT_water_pump_01" placeholder="LYO_CT_water_pump_01 " required ><br> <br>
+        <input type ="floatformat" name="LYO_CT_water_pump_02" placeholder="LYO_CT_water_pump_02 " required ><br> <br>
+        <input type ="floatformat" name="LYO_CT_water_pump_03" placeholder="LYO_CT_water_pump_03 " required ><br> <br>
+        <input type ="floatformat" name="LYO_CT_fan" placeholder="LYO_CT_fan " required ><br> <br>
+        <input type ="floatformat" name="CSI_Brine_Machine_03" placeholder="CSI_Brine_Machine_03 " required ><br> <br>
+      <input type="submit">
+    </form >
+
+  </body>
+</html>

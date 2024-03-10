@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nectar Lifesciences Ltd. </title>
+    <link rel="stylesheet" href="{{STATIC_URL}}style.css" type"text/css" media="screen">
+  </head>
+  <body>
+	  <h1><center>Electrical Power Consumption </h1>
+    {% if result %} 
+        <h1><center> </h1>
+    {% endif %}
+
+    <form action ="" method = "POST">
+
+      {% csrf_token %}
+      <center class="PG">
+        <input type ="date" name="Date" placeholder= "Enter the Date " required ><br> <br>
+        <input type ="floatformat" name="Turbine_Generator" placeholder="Enter the TG " required ><br> <br>
+        <input type ="floatformat" name="State_board" placeholder=" State_board" required ><br> <br>
+        <input type ="floatformat" name="DG" placeholder=" DG" required ><br> <br>
+        <input type ="floatformat" name="HSD" placeholder=" HSD" required ><br> <br>
+        <input type ="floatformat" name="Oral_utility" placeholder=" Oral_utility" required ><br> <br>
+        <input type ="floatformat" name="FRICK_India" placeholder=" FRICK_India" required ><br> <br>
+        <input type ="floatformat" name="ORAL_BD_SRP" placeholder=" ORAL_BD_SRP" required ><br> <br>
+        <input type ="floatformat" name="BD_plant" placeholder=" BD_plant" required ><br> <br>
+        <input type ="floatformat" name="Trane_machine" placeholder="Trane_machine " required ><br> <br>
+        <input type ="floatformat" name="CSI_02" placeholder=" CSI_02" required ><br> <br>
+        <input type ="floatformat" name="Sterile_utility" placeholder=" Sterile_utility" required ><br> <br>
+        <input type ="floatformat" name="STR_A" placeholder="STR_A " required ><br> <br>
+        <input type ="floatformat" name="LYO_1" placeholder=" LYO_1" required ><br> <br>
+        <input type ="floatformat" name="LYO_2" placeholder="LYO_2 " required ><br> <br>
+        <input type ="floatformat" name="LYO_3" placeholder="LYO_3 " required ><br> <br>
+        <input type ="floatformat" name="STR_C" placeholder="STR_C " required ><br> <br>
+        <input type ="floatformat" name="AHU_STR_C" placeholder=" AHU_STR_C" required ><br> <br>
+        <input type ="floatformat" name="AHU_STR_A" placeholder=" AHU_STR_A" required ><br> <br>
+        <input type ="floatformat" name="RO_and_LAB" placeholder="RO_and_LAB " required ><br> <br>
+        <input type ="floatformat" name="LYO_CT_pump_and_sterile_reactor" placeholder=" LYO_CT_pump_and_sterile_reactor" required ><br> <br>
+        <input type ="floatformat" name="Lighting" placeholder="Lighting " required ><br> <br>
+        <input type ="floatformat" name="Boiler_8_ton" placeholder=" Boiler_8_ton" required ><br> <br>
+        <input type ="floatformat" name="Fire_hydrand_and_borewell" placeholder=" Fire_hydrand_and_borewell" required ><br> <br>
+        <input type ="floatformat" name="Canteen" placeholder=" Canteen" required ><br> <br>
+
+      <input type="submit">
+    </form >
+
+  </body>
+</html>
